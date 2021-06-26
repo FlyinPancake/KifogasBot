@@ -1,16 +1,16 @@
 import os
 import discord as dc
 from random import choice
+import json
 
 client = dc.Client()
 TOKEN = os.environ['DC_BOT_TOKEN']
 
-kifogasok = [
-  "háziját megette Hitler.",
-  "akkorát szart, hogy most helyszínelnek nála.",
-  "komp akart lenni de nem komplett."
-]
+kifogas_file = open("hu.json", )
 
+kifogasok = json.load(kifogas_file)
+
+print(kifogasok)
 
 @client.event
 async def on_ready():
@@ -24,5 +24,5 @@ async def on_message(message):
   if message.content.startswith("!kifogas"):
     await message.channel.send("Bocsi csak {0.name} ".format(message.author) + choice(kifogasok))
 
-client.run(TOKEN)
+# client.run(TOKEN)
 

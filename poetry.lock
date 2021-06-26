@@ -98,6 +98,14 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "xintool"
+version = "0.0.7"
+description = "python opensource tools"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "yarl"
 version = "1.6.3"
 description = "Yet another URL library"
@@ -112,7 +120,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "8e3982e5893f898e471d7e44f4fcdd31e90ccbdc77fe85d3a7e3be4356430829"
+content-hash = "5378b5237ce8471699da5628ca3eb6e181b3ff02f99de12ff5f899d54b1af6c0"
 
 [metadata.files]
 aiohttp = [
@@ -221,6 +229,10 @@ typing-extensions = [
     {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
     {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
     {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
+]
+xintool = [
+    {file = "xintool-0.0.7-py3-none-any.whl", hash = "sha256:113bf6cc8787c1848300b6fcb05f8dd77d67942ec307827f34fd7876f3873edc"},
+    {file = "xintool-0.0.7.tar.gz", hash = "sha256:0dae1e082a01c4a3bc6899999fec5391cb6407c56fa828e048c2fabd70d050c1"},
 ]
 yarl = [
     {file = "yarl-1.6.3-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:0355a701b3998dcd832d0dc47cc5dedf3874f966ac7f870e0f3a6788d802d434"},
