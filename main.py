@@ -8,7 +8,7 @@ TOKEN = os.environ['DC_BOT_TOKEN']
 
 kifogas_file = open("hu.json", )
 
-kifogasok = json.load(kifogas_file)
+kifogasok = json.load(kifogas_file)["excuses"]
 
 print(kifogasok)
 
@@ -24,5 +24,5 @@ async def on_message(message):
   if message.content.startswith("!kifogas"):
     await message.channel.send("Bocsi csak {0.name} ".format(message.author) + choice(kifogasok))
 
-# client.run(TOKEN)
+client.run(TOKEN)
 
