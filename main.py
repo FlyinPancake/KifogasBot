@@ -10,8 +10,6 @@ kifogas_file = open("hu.json", )
 
 kifogasok = json.load(kifogas_file)["excuses"]
 
-print(kifogasok)
-
 @client.event
 async def on_ready():
   print("Logged in as {0.user}".format(client))
